@@ -1,0 +1,71 @@
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.five {
+  justify-content: center;
+  align-items: center;
+  display: block;
+  height: 50%;
+  width: 50%;
+  position: absolute;
+  left: 25%;
+  outline: 1px solid white;
+  background-color: green;
+}
+.five .four {
+  justify-content: center;
+  align-items: center;
+  display: block;
+  height: 50%;
+  width: 50%;
+  position: absolute;
+  left: 25%;
+  outline: 1px solid white;
+  background-color: blue;
+}
+.five .four .three {
+  justify-content: center;
+  align-items: center;
+  display: block;
+  height: 50%;
+  width: 50%;
+  position: absolute;
+  left: 25%;
+  outline: 1px solid white;
+  background-color: red;
+}
+.five .four .three .two {
+  justify-content: center;
+  align-items: center;
+  display: block;
+  height: 50%;
+  width: 50%;
+  position: absolute;
+  left: 25%;
+  outline: 1px solid white;
+  background-color: yellow;
+}
+.five .four .three .two .one {
+  justify-content: center;
+  align-items: center;
+  display: block;
+  height: 50%;
+  width: 50%;
+  position: absolute;
+  left: 25%;
+  outline: 1px solid white;
+  background-color: pink;
+}
+
+p {
+  font-size: 22px;
+  color: black;
+  z-index: 12;
+}
+
+span .ui-slider-handle {
+  content: "nope";
+}/*# sourceMappingURL=style.css.map */

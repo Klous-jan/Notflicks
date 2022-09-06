@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./newProfile/CSS/newProfile.css">
+    <!-- Bootstrap is used on this page for very few reasons, will come back to clean this up. -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-2.1.1.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.js" type="text/javascript"></script>
+    <script src="./newProfile/JS/slider.js" type="text/javascript"></script>
+    <!--jQuery UI theme, here I use "flick" -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/flick/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="./newProfile/CSS/jquery-ui-slider-pips.css">
+    <link rel="stylesheet" type="text/css" href="./newProfile/CSS/slider.css">
+
+</head>
+
+<body style="background-color: rgb(20, 20, 20);" class="unsel">
+    <!-- Start of Navbar -->
+    <div>
+        <!-- d-xl-none makes this chunk ONLY show on smaller screens -->
+        <div class="col d-xl-none">
+            <div class="p-5 text-light header" style="background-color: rgb(20, 20, 20)">
+                <img src="./Images/NOTFLICKS-button.png ">
+                <div class="d-inline browseSpacer "></div>
+                <a href="./Index.html" id="testlink">index</a>
+            </div>
+        </div>
+    </div>
+    <div>
+        <!-- d-xl-block makes this chunk ONLY show on larger screens, without it, nothing is displayed on larger screens -->
+        <!-- d-none makes it so on smaller screens BOTH the nav bars arnt visable -->
+        <div class="col d-none d-xl-block ">
+            <div class="p-5 text-light header" style="background-color: rgb(20, 20, 20)">
+                <img src="./Images/NOTFLICKS-button.png ">
+                <a href="./Index.html" id="testlink">index</a>
+            </div>
+        </div>
+    </div>
+    <!--  End of Navbar  -->
+
+    <div class="edit-profile-main">
+        <div class="center-box">
+            <h1 class="edit-profile-text">Edit Profile</h1>
+            <!-- add 1 px border to bottom -->
+            <div class="main-wrapper">
+                <div class="avatar-left">
+                    <div class="avatar">
+                        <div class="change-avatar" href="newAvatar.html"></div>
+                    </div>
+                </div>
+                <div class="info-wrapper">
+                    <div class="form-wrapper">
+                        <input class="profile-name" value="Enter Name" onfocus="this.value=''">
+                    </div>
+                    <div class="language-wrapper">
+                        <h3 class="language-title">Language:</h3>
+                        <select name="languages" class="dropdown">
+                        <option value="English">English</option>
+                        <option value="French">French</option>
+                    </select>
+                    </div>
+                    <!-- add 1 px border to bottom -->
+                    <div class="maturity-wrapper">
+                        <h3 class="maturity-title">Maturity Settings:</h3>
+                        <div class="main-slider-wrapper">
+                            <div id="circles-slider"></div>
+                        </div>
+
+
+                        <!-- add a slider for maturity scale 'greyed out' -->
+                        <!-- only usable after 'EDIT' has been chosen -->
+
+                        <!-- based on selected maturity rating, show brief description of rating -->
+                    </div>
+                    <!-- add 1 px border to bottom -->
+                    <div class="autoplay-wrapper">
+                        <p class="autoplay-title">Autoplay Controls</p>
+                        <!-- checkbox -->
+                        <div class="autoplay-block">
+                            <div class="autoplay-desc">
+                                <input type="checkbox" class="autoplay-checkbox">
+                                <p class="autoplay-desc-text">Autoplay next episode</p>
+                            </div>
+                            <!-- checkbox -->
+                            <div class="autoplay-desc">
+                                <input type="checkbox" class="autoplay-checkbox">
+                                <p class="autoplay-desc-text">Autoplay previews</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- add 1 px border to bottom -->
+            <div class="end-wrapper">
+                <input class="save-button" type="submit" value="Save">
+                <input class="cancel-button" type="submit" value="Cancel">
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="./newProfile/JS/jquery-ui-slider-pips.js" type="text/javascript"></script>
+    <script src="./newProfile/JS/slider.js" type="text/javascript"></script>
+</body>
+
+</html>

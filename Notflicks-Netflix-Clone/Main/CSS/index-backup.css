@@ -1,0 +1,282 @@
+/* Overall body and HTML */
+
+
+/* ------------------------------------------------------- */
+
+body,
+html {
+    overflow-x: hidden;
+}
+
+
+/* NAVBAR */
+
+
+/* ------------------------------------------------------- */
+
+.header {
+    position: relative;
+    margin-top: 1px;
+}
+
+#browse {
+    color: green;
+    outline: 2px solid red;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#browse:hover {
+    color: blue;
+}
+
+
+/* Ghetto styling */
+
+
+/* ------------------------------------------------------- */
+
+.browseSpacer {
+    padding: 1.1%;
+}
+
+
+/* Genre Styling */
+
+
+/* ------------------------------------------------------- */
+
+.sectionHeader {
+    color: white;
+}
+
+
+/* Slider Styling */
+
+
+/* ------------------------------------------------------- */
+
+
+/* Carousel outlines */
+
+* {
+    outline: 1px solid red;
+}
+
+.carousel1 {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.carousel2 {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.carousel3 {
+    position: relative;
+    overflow-x: hidden;
+}
+
+
+/* Carousel 1 */
+
+#container>* {
+    position: absolute;
+}
+
+.carousel1 .switchLeft1,
+.carousel1 .switchRight1 {
+    color: white;
+    font-weight: bold;
+    height: 200px;
+    width: 65px;
+    line-height: 200px;
+    font-size: 25px;
+    text-align: center;
+    background-color: rgba(20, 20, 20, 0.1);
+    font-family: sans-serif;
+    margin-bottom: 30px;
+    bottom: 0px;
+    z-index: 4;
+    text-decoration: none;
+}
+
+.carousel1 .switchLeft1:hover,
+.carousel1 .switchRight1:hover {
+    background-color: rgba(20, 20, 20, .5);
+    transition: 1s;
+}
+
+.carousel1 .switchLeft1 {
+    position: absolute;
+    left: 53px;
+}
+
+.carousel1 .switchRight1 {
+    position: absolute;
+    right: 0px;
+}
+
+.carouselBox1 {
+    height: 250px;
+    width: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 10px !important;
+    display: flex;
+    align-items: center;
+}
+
+.carouselBox1 img {
+    min-width: 147px;
+    min-height: 147px;
+    height: 200px;
+    background-size: cover;
+    margin: 5px;
+    padding-right: 10px;
+    cursor: pointer;
+    transition: .5s ease;
+    z-index: 3;
+}
+
+.carouselBox1 img:hover {
+    transform: scale(1.4);
+    z-index: 4;
+}
+
+
+/* Carousel 2 */
+
+.carousel2 .switchLeft2,
+.carousel2 .switchRight2 {
+    color: white;
+    font-weight: bold;
+    height: 200px;
+    width: 65px;
+    line-height: 200px;
+    font-size: 25px;
+    text-align: center;
+    background-color: rgba(20, 20, 20, 0.1);
+    font-family: sans-serif;
+    margin-bottom: 30px;
+    bottom: 0px;
+    z-index: 4;
+    text-decoration: none;
+}
+
+.carousel2 .switchLeft2:hover,
+.carousel2 .switchRight2:hover {
+    background-color: rgba(20, 20, 20, .5);
+    transition: 1s;
+}
+
+.carousel2 .switchLeft2 {
+    position: absolute;
+    left: 53px;
+}
+
+.carousel2 .switchRight2 {
+    position: absolute;
+    right: 0px;
+}
+
+.carouselBox2 {
+    height: 250px;
+    width: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 10px !important;
+    display: flex;
+    align-items: center;
+}
+
+.carouselBox2 img {
+    min-width: 147px;
+    min-height: 147px;
+    height: 200px;
+    background-size: cover;
+    margin: 5px;
+    padding-right: 10px;
+    cursor: pointer;
+    transition: .5s ease;
+    z-index: 3;
+}
+
+.carouselBox2 img:hover {
+    transform: scale(1.4);
+    z-index: 4;
+}
+
+
+/* Carousel 3 */
+
+#container>* {
+    position: absolute;
+}
+
+.carousel3 .switchLeft3,
+.carousel3 .switchRight3 {
+    color: white;
+    font-weight: bold;
+    height: 200px;
+    width: 65px;
+    line-height: 200px;
+    font-size: 25px;
+    text-align: center;
+    background-color: rgba(20, 20, 20, 0.1);
+    font-family: sans-serif;
+    margin-bottom: 30px;
+    bottom: 0px;
+    z-index: 4;
+    text-decoration: none;
+}
+
+.carousel3 .switchLeft3:hover,
+.carousel3 .switchRight3:hover {
+    background-color: rgba(20, 20, 20, .5);
+    transition: 1s;
+}
+
+.carousel3 .switchLeft3 {
+    position: absolute;
+    left: 65px;
+}
+
+.carousel3 .switchRight3 {
+    position: absolute;
+    right: 0px;
+}
+
+.carouselBox3 {
+    height: 250px;
+    width: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 10px !important;
+    display: flex;
+    align-items: center;
+}
+
+.carouselBox3 img {
+    min-width: 147px;
+    min-height: 147px;
+    height: 200px;
+    background-size: cover;
+    margin: 5px;
+    padding-right: 10px;
+    cursor: pointer;
+    transition: .5s ease;
+    z-index: 3;
+}
+
+.carouselBox3 img:hover {
+    transform: scale(1.4);
+    z-index: 4;
+}
