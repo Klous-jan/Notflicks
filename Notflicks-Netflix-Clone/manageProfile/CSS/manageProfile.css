@@ -1,9 +1,8 @@
 /* TEMP */
 
-
-/* * {
+* {
     outline: 1px solid red;
-} */
+}
 
 * {
     letter-spacing: 0!important;
@@ -28,11 +27,6 @@ html {
 
 
 /* ------------------------------------------------------- */
-
-.header {
-    position: relative;
-    margin-top: 1px;
-}
 
 
 /* CENTER SCREEN */
@@ -64,14 +58,12 @@ html {
 .list-profiles {
     color: aliceblue;
     font-size: calc(3.5vw + 12px);
-    width: 100%;
-    max-width: 80%;
+    width: 100vw;
+    max-width: 80vw;
 }
 
 ul {
     display: block;
-    margin: 1px;
-    padding: 1px;
 }
 
 li {
@@ -80,8 +72,6 @@ li {
     justify-content: center;
     align-items: center;
     text-align: -webkit-match-parent;
-    margin: 1px;
-    padding: 1px;
 }
 
 .profile {
@@ -96,8 +86,6 @@ li {
     min-height: 110px;
     min-width: 110px;
     display: block;
-    justify-content: center;
-    align-items: center;
     background-image: url(/Images/icons/DemoProfile.png);
     background-repeat: no-repeat;
     background-attachment: absolute;
@@ -107,7 +95,18 @@ li {
 }
 
 .set-profile:hover {
-    border: 3px solid aliceblue;
+    border: 3px solid #f0f8ff;
+}
+
+.profile-edit {
+    margin: auto;
+    height: 2.5vw;
+    width: 2.5vw;
+    min-height: 27px;
+    min-width: 27px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.25vw;
 }
 
 .set-new-profile {
@@ -152,11 +151,38 @@ li {
     color: aliceblue;
 }
 
+.manage-profiles {
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-top: .75vw;
+    padding-bottom: .75vw;
+    vertical-align: middle;
+    display: inline-block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 1.5vw;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: aliceblue;
+    border: 0px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.manage-profiles:hover {
+    color: aliceblue;
+    background-color: red;
+}
+
 .profileName {
     text-align: center;
     font-size: calc(20% + 10px);
-    padding-top: 15%;
-    margin-top: 20px;
+    padding-top: .5vw;
+    margin-top: 2.1vw;
     display: block;
     color: grey;
 }
