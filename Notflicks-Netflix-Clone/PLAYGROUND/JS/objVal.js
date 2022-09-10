@@ -1,3 +1,13 @@
+let movies = [];
+
+function test() {
+    const checked = document.querySelector('#ANEID:checked') !== null;
+    if (checked == true) {
+        console.log(document.getElementById('quick').innerHTML = "1");
+    } else
+        console.log(document.getElementById('quick').innerHTML = "0");
+}
+
 const addMovie = (event) => {
     event.preventDefault(); //to stop the form submitting
     function checkbox() {
