@@ -1,3 +1,4 @@
+// Name: Hide Content Show Confirm Box
 function toggleText() {
     setTimeout(function() {
         var x = document.getElementById("Myid");

@@ -1,3 +1,5 @@
+// Name: Takes user input and store in local Storage:Object
+
 let movies = [];
 
 function test() {

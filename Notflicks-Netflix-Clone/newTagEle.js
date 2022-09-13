@@ -1,3 +1,4 @@
+// Name: Generate HTML divs and Styling
 //create a new term
 const terms = document.createElement('h3');
 
@@ -16,7 +17,7 @@ mainID.style.color = "yellow";
 
 //=========================================================================
 
-
+// Name: Generate images based on Array Values
 var m,
     urls = [],
     str = '<img src="./Images/profilePictures/Animals/1-1.png />\n <img src="./Images/profilePictures/Animals/1-1.png />\n <img src="./Images/profilePictures/Animals/1-2.png />',
