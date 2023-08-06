@@ -1,2 +1,2 @@
 # Notflicks-repo
- Notflicks Netflix clone to show design
+ Notflicks: My Netflix clone
