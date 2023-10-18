@@ -45,7 +45,7 @@ const ML10 = "https://api.themoviedb.org/3/discover/movie?with_people=108916,746
 const ML11 = "https://api.themoviedb.org/3/discover/movie?with_genres=18&sort_by=vote_average.desc&api_key=";
 const ML12 = "https://api.themoviedb.org/3/discover/movie?certification_country=US&certification=R&api_key=";
 
-const mlArray = [ML1, ML2, ML3, ML4, ML5, ML6, ML7, ML8, ML9, ML10, ML11, ML12]
+const mlArray = [ML1, ML2, ML3, ML4, ML5, ML6, ML7, ML8, ML9, ML10, ML11, ML12];
 
 const SS1 = "&primary_release_date.lte=2014-10-22";
 const SS2 = "&sort_by=popularity.desc";
@@ -60,37 +60,19 @@ const SS10 = "&sort_by=popularity.desc";
 const SS11 = "&vote_count.gte=10";
 const SS12 = "&sort_by=revenue.desc&with_cast=3896";
 
-const ssArray = [SS1, SS2, SS3, SS4, SS5, SS6, SS7, SS8, SS9, SS10, SS11, SS12]
+const ssArray = [SS1, SS2, SS3, SS4, SS5, SS6, SS7, SS8, SS9, SS10, SS11, SS12];
 
 function randomizer() {
-    //pull first element from mlArray,
-    //pull first element from ssArray
-    //put into index.js async function showMovieData [ " " + api_key + " "]
-    //that will be CBN1
-
-    //pull first element from mlArray,
-    //pull second element from ssArray
-    //put into index.js async function showMovieData [ " " + api_key + " "]
-    //that will be CBN2
-
-    //find out how to automate
+	//pull first element from mlArray,
+	//pull first element from ssArray
+	//put into index.js async function showMovieData [ " " + api_key + " "]
+	//that will be CBN1
+	//pull first element from mlArray,
+	//pull second element from ssArray
+	//put into index.js async function showMovieData [ " " + api_key + " "]
+	//that will be CBN2
+	//find out how to automate
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2014-09-15&api_key=
 // https://api.themoviedb.org/3/discover/movie?api_key=
@@ -104,7 +86,6 @@ function randomizer() {
 // https://api.themoviedb.org/3/discover/movie?with_people=108916,7467&api_key=
 // https://api.themoviedb.org/3/discover/movie?with_genres=18&sort_by=vote_average.desc&api_key=
 // https://api.themoviedb.org/3/discover/movie?certification_country=US&certification=R&api_key=
-
 
 // &primary_release_date.lte=2014-10-22
 // &sort_by=popularity.desc
