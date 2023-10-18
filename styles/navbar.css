@@ -55,7 +55,7 @@
 .account-dropdown {
 	height: 32px;
 	width: 32px;
-	background-image: url(/Images/profilePictures/Futurama/3-3.png);
+	background-image: url(../Images/profilePictures/Futurama/3-3.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 100%;
@@ -133,10 +133,10 @@
 	height: 25px;
 }
 
-.dropdown-tool-s {
+/* .dropdown-tool-s {
 	width: 25px;
 	height: 25px;
-}
+} */
 
 .dropdown-img {
 	background-repeat: no-repeat;
@@ -148,11 +148,11 @@
 }
 
 .piO1 {
-	background-image: url(/Images/profilePictures/Futurama/3-4.png);
+	background-image: url(../Images/profilePictures/Futurama/3-4.png);
 }
 
 .piMP {
-	background-image: url(/Images/icons/gear-svgrepo-com.svg);
+	background-image: url(../Images/icons/gear-svgrepo-com.svg);
 	position: relative;
 }
 
@@ -163,7 +163,7 @@
 }
 
 .piHC {
-	background-image: url(/Images/icons/help-svgrepo-com.svg);
+	background-image: url(../Images/icons/help-svgrepo-com.svg);
 }
 
 .piHC:hover {
@@ -173,7 +173,7 @@
 }
 
 .piBP {
-	background-image: url(/Images/icons/back-svgrepo-com.svg);
+	background-image: url(../Images/icons/back-svgrepo-com.svg);
 }
 
 .piBP:hover {
