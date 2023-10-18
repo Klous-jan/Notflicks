@@ -1,7 +1,7 @@
 // --------- Start of Carousel #NumOne ---------
 const slidersNumOne = document.querySelector(".CBN1");
 var scrollPerClickNumOne;
-var imagePaddingNumOne = 20;
+var imagePaddingNumOne = 0;
 
 showMovieDataNumOne();
 
