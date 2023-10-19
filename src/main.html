@@ -14,16 +14,16 @@
 			rel="stylesheet"
 			integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
 			crossorigin="anonymous" />
-		<script src="/scripts/navbarTrans.js"></script>
+		<script src="../scripts/navbarTrans.js"></script>
 	</head>
 
-	<script>
+	<!-- <script>
 		var video = document.querySelector("iframe");
 		video.addEventListener("ended", function () {
 			video.load();
-			video.src = "/images/video/AmongUsPoster.png";
+			video.src = "../images/video/AmongUsPoster.png";
 		});
-	</script>
+	</script> -->
 
 	<body class="unsel" onload="(onabort)">
 		<!-- <body style="background-color: rgb(20, 20, 20);" class="unsel"> -->
@@ -91,10 +91,11 @@
 				width="100%"
 				height="822px"
 				id="trailer"
-				poster="../Images/profilePictures/Futurama/3-3.png"
+				poster="../Images/video/AmongUsPoster.png"
 				src="https://www.youtube.com/embed/t2jP1AVkItA?autoplay=1&mute=1"
 				type="video/mp4"
-				style="pointer-events: none"></iframe>
+				style="pointer-events: none">
+			</iframe>
 			<!-- <iframe src="https://www.youtube.com/embed/6AYv6rV3NXE"></iframe> -->
 			<!-- <iframe width="1280" height="720" src="https://www.youtube.com/embed/9sPthPleEKo" frameborder="0" allowfullscreen></iframe> -->
 		</div>
@@ -118,8 +119,8 @@
 			<div class="carouselTwo" style="display: inline block">
 				<h2 class="ms-5 sectionHeader">Thrillers but the entire cast is David Schwimmer</h2>
 				<div class="ms-5 CBN2">
-					<a id="LTwo " style="display: none" class="switchLeftTwo" onclick="sliderScrollLeftTwo() "> <img src="../Images/displayIcons/Larrow.png " class="lArrowTwo" /></a>
-					<a class="switchRightTwo" onclick="sliderScrollRightTwo();ShowLTwo(); "> <img src="../Images/displayIcons/Rarrow.png " class="rArrowTwo" /></a>
+					<a id="LNumTwo" style="display: none" class="switchLeftTwo" onclick="sliderScrollLeftTwo() "> <img src="../Images/displayIcons/Larrow.png " class="lArrowTwo" /></a>
+					<a class="switchRightTwo" onclick="sliderScrollRightTwo();ShowLNumTwo(); "> <img src="../Images/displayIcons/Rarrow.png " class="rArrowTwo" /></a>
 				</div>
 			</div>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.js "></script>
@@ -129,8 +130,8 @@
 			<div class="carouselThree" style="display: inline block">
 				<h2 class="ms-5 sectionHeader">Recommended for people who drive Civics</h2>
 				<div class="ms-5 CBN3">
-					<a id="LThree " style="display: none" class="switchLeftThree" onclick="sliderScrollLeftThree() "> <img src="../Images/displayIcons/Larrow.png " class="lArrowThree" /></a>
-					<a class="switchRightThree" onclick="sliderScrollRightThree();ShowLThree(); "> <img src="../Images/displayIcons/Rarrow.png " class="rArrowThree" /></a>
+					<a id="LNumThree" style="display: none" class="switchLeftThree" onclick="sliderScrollLeftThree() "> <img src="../Images/displayIcons/Larrow.png " class="lArrowThree" /></a>
+					<a class="switchRightThree" onclick="sliderScrollRightThree();ShowLNumThree(); "> <img src="../Images/displayIcons/Rarrow.png " class="rArrowThree" /></a>
 				</div>
 			</div>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.js "></script>
@@ -138,40 +139,40 @@
 
 			<!-- Carousel #Four -->
 			<div class="carouselFour" style="display: inline block">
-				<h2 class="ms-5 sectionHeader">Kevin the interns top pics</h2>
+				<h2 class="ms-5 sectionHeader">Kevin the interns top picks</h2>
 				<div class="ms-5 CBN4">
-					<a id="LFour " style="display: none" class="switchLeftFour" onclick="sliderScrollLeftFour() "> <img src="../Images/displayIcons/Larrow.png " class="lArrowFour" /></a>
-					<a class="switchRightFour" onclick="sliderScrollRightFour();ShowLFour(); "> <img src="../Images/displayIcons/Rarrow.png " class="rArrowFour" /></a>
+					<a id="LNumFour" style="display: none" class="switchLeftFour" onclick="sliderScrollLeftFour() "> <img src="../Images/displayIcons/Larrow.png " class="lArrowFour" /></a>
+					<a class="switchRightFour" onclick="sliderScrollRightFour();ShowLNumFour(); "> <img src="../Images/displayIcons/Rarrow.png " class="rArrowFour" /></a>
 				</div>
 			</div>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.js "></script>
 			<!-- End of Carousel #Four -->
 			<!-- Carousel #Five -->
 			<div class="carouselFive" style="display: inline block">
-				<h2 class="ms-5 sectionHeader">Kevin the interns top pics</h2>
+				<h2 class="ms-5 sectionHeader">Movies that include the 1993 hit song 'Informer'</h2>
 				<div class="ms-5 CBN5">
-					<a id="LFive " style="display: none" class="switchLeftFive" onclick="sliderScrollLeftFive() "> <img src="../Images/displayIcons/Larrow.png " class="lArrowFive" /></a>
-					<a class="switchRightFive" onclick="sliderScrollRightFive();ShowLFive(); "> <img src="../Images/displayIcons/Rarrow.png " class="rArrowFive" /></a>
+					<a id="LNumFive" style="display: none" class="switchLeftFive" onclick="sliderScrollLeftFive() "> <img src="../Images/displayIcons/Larrow.png " class="lArrowFive" /></a>
+					<a class="switchRightFive" onclick="sliderScrollRightFive();ShowLNumFive(); "> <img src="../Images/displayIcons/Rarrow.png " class="rArrowFive" /></a>
 				</div>
 			</div>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.js "></script>
 			<!-- End of Carousel #Five -->
 			<!-- Carousel #Six -->
 			<div class="carouselSix" style="display: inline block">
-				<h2 class="ms-5 sectionHeader">Kevin the interns top pics</h2>
+				<h2 class="ms-5 sectionHeader">Top movies in Douglas Wyoming today</h2>
 				<div class="ms-5 CBN6">
-					<a id="LSix " style="display: none" class="switchLeftSix" onclick="sliderScrollLeftSix() "> <img src="../Images/displayIcons/Larrow.png " class="lArrowSix" /></a>
-					<a class="switchRightSix" onclick="sliderScrollRightSix();ShowLSix(); "> <img src="../Images/displayIcons/Rarrow.png " class="rArrowSix" /></a>
+					<a id="LNumSix" style="display: none" class="switchLeftSix" onclick="sliderScrollLeftSix() "> <img src="../Images/displayIcons/Larrow.png " class="lArrowSix" /></a>
+					<a class="switchRightSix" onclick="sliderScrollRightSix();ShowLNumSix(); "> <img src="../Images/displayIcons/Rarrow.png " class="rArrowSix" /></a>
 				</div>
 			</div>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.js "></script>
 			<!-- End of Carousel #Six -->
 			<!-- Carousel #Seven -->
 			<div class="carouselSeven" style="display: inline block">
-				<h2 class="ms-5 sectionHeader">Kevin the interns top pics</h2>
+				<h2 class="ms-5 sectionHeader">Historically accurate movies if you know nothing about history</h2>
 				<div class="ms-5 CBN7">
-					<a id="LSeven " style="display: none" class="switchLeftSeven" onclick="sliderScrollLeftSeven() "> <img src="../Images/displayIcons/Larrow.png " class="lArrowSeven" /></a>
-					<a class="switchRightSeven" onclick="sliderScrollRightSeven();ShowLSeven(); "> <img src="../Images/displayIcons/Rarrow.png " class="rArrowSeven" /></a>
+					<a id="LNumSeven" style="display: none" class="switchLeftSeven" onclick="sliderScrollLeftSeven() "> <img src="../Images/displayIcons/Larrow.png " class="lArrowSeven" /></a>
+					<a class="switchRightSeven" onclick="sliderScrollRightSeven();ShowLNumSeven(); "> <img src="../Images/displayIcons/Rarrow.png " class="rArrowSeven" /></a>
 				</div>
 			</div>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.js "></script>

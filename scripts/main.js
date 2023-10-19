@@ -2,9 +2,6 @@
 const slidersNumOne = document.querySelector(".CBN1");
 var scrollPerClickNumOne;
 var imagePaddingNumOne = 20;
-
-showMovieDataNumOne();
-
 var scrollAmountNumOne = 0;
 
 function sliderScrollLeftNumOne() {
@@ -37,24 +34,20 @@ async function showMovieDataNumOne() {
 	result.map(function (cur, index) {
 		slidersNumOne.insertAdjacentHTML("beforeend", `<img class="img-${index} slider-img" src="https://image.tmdb.org/t/p/w185/${cur.poster_path}" />`);
 	});
-	scrollPerClickNumOne = document.querySelector(".img-1").clientWidth + imagePaddingNumOne;
+	scrollPerClickNumOne = document.querySelector(".img-1").clientWidth + imagePaddingNumOne * 6.6;
 }
+showMovieDataNumOne();
 
 // Hide left arrow till right arrow is pressed
-
 function ShowLNumOne() {
 	var T = document.getElementById("LNumOne");
 	T.style.display = "block"; // <-- Set it to block
 }
 // ---------  End of Carousel #NumOne  ---------
-
 // --------- Start of Carousel #Two ---------
 const slidersTwo = document.querySelector(".CBN2");
 var scrollPerClickTwo;
 var imagePaddingTwo = 20;
-
-showMovieDataTwo();
-
 var scrollAmountTwo = 0;
 
 function sliderScrollLeftTwo() {
@@ -87,23 +80,20 @@ async function showMovieDataTwo() {
 	result.map(function (cur, index) {
 		slidersTwo.insertAdjacentHTML("beforeend", `<img class="img-${index} slider-img" src="https://image.tmdb.org/t/p/w185/${cur.poster_path}" />`);
 	});
-	scrollPerClickTwo = document.querySelector(".img-1").clientWidth + imagePaddingTwo;
+	scrollPerClickTwo = document.querySelector(".img-1").clientWidth + imagePaddingTwo * 6.6;
 }
+showMovieDataTwo();
 
 // Hide left arrow till right arrow is pressed
-function ShowLTwo() {
-	var T = document.getElementById("LTwo");
+function ShowLNumTwo() {
+	var T = document.getElementById("LNumTwo");
 	T.style.display = "block"; // <-- Set it to block
 }
 // ---------  End of Carousel #Two  ---------
-
 // --------- Start of Carousel #Three ---------
 const slidersThree = document.querySelector(".CBN3");
 var scrollPerClickThree;
 var imagePaddingThree = 20;
-
-showMovieDataThree();
-
 var scrollAmountThree = 0;
 
 function sliderScrollLeftThree() {
@@ -136,23 +126,20 @@ async function showMovieDataThree() {
 	result.map(function (cur, index) {
 		slidersThree.insertAdjacentHTML("beforeend", `<img class="img-${index} slider-img" src="https://image.tmdb.org/t/p/w185/${cur.poster_path}" />`);
 	});
-	scrollPerClickThree = document.querySelector(".img-1").clientWidth + imagePaddingThree;
+	scrollPerClickThree = document.querySelector(".img-1").clientWidth + imagePaddingThree * 6.6;
 }
+showMovieDataThree();
 
 // Hide left arrow till right arrow is pressed
-function ShowLThree() {
-	var T = document.getElementById("LThree");
+function ShowLNumThree() {
+	var T = document.getElementById("LNumThree");
 	T.style.display = "block"; // <-- Set it to block
 }
 // ---------  End of Carousel #Three  ---------
-
 // --------- Start of Carousel #Four ---------
 const slidersFour = document.querySelector(".CBN4");
 var scrollPerClickFour;
 var imagePaddingFour = 20;
-
-showMovieDataFour();
-
 var scrollAmountFour = 0;
 
 function sliderScrollLeftFour() {
@@ -185,23 +172,20 @@ async function showMovieDataFour() {
 	result.map(function (cur, index) {
 		slidersFour.insertAdjacentHTML("beforeend", `<img class="img-${index} slider-img" src="https://image.tmdb.org/t/p/w185/${cur.poster_path}" />`);
 	});
-	scrollPerClickFour = document.querySelector(".img-1").clientWidth + imagePaddingFour;
+	scrollPerClickFour = document.querySelector(".img-1").clientWidth + imagePaddingFour * 6.6;
 }
+showMovieDataFour();
 
 // Hide left arrow till right arrow is pressed
-function ShowLFour() {
-	var T = document.getElementById("LFour");
+function ShowLNumFour() {
+	var T = document.getElementById("LNumFour");
 	T.style.display = "block"; // <-- Set it to block
 }
 // ---------  End of Carousel #Four  ---------
-
 // --------- Start of Carousel #Five ---------
 const slidersFive = document.querySelector(".CBN5");
 var scrollPerClickFive;
 var imagePaddingFive = 20;
-
-showMovieDataFive();
-
 var scrollAmountFive = 0;
 
 function sliderScrollLeftFive() {
@@ -228,29 +212,26 @@ function sliderScrollRightFive() {
 
 async function showMovieDataFive() {
 	const api_key = "c410e49d7b8a0b61da272540eac14079";
-	var result = await axios.get("https://api.themoviedb.org/3/discover/movie/?certification_country=US&certification=R&api_key=" + api_key + "&sort_by=revenue.desc");
+	var result = await axios.get("https://api.themoviedb.org/3/discover/movie?with_genres=18&api_key=" + api_key + "&sort_by=vote_average.desc");
 	result = result.data.results;
 
 	result.map(function (cur, index) {
 		slidersFive.insertAdjacentHTML("beforeend", `<img class="img-${index} slider-img" src="https://image.tmdb.org/t/p/w185/${cur.poster_path}" />`);
 	});
-	scrollPerClickFive = document.querySelector(".img-1").clientWidth + imagePaddingFive;
+	scrollPerClickFive = document.querySelector(".img-1").clientWidth + imagePaddingFive * 6.6;
 }
+showMovieDataFive();
 
 // Hide left arrow till right arrow is pressed
-function ShowLFive() {
-	var T = document.getElementById("LFive");
+function ShowLNumFive() {
+	var T = document.getElementById("LNumFive");
 	T.style.display = "block"; // <-- Set it to block
 }
 // ---------  End of Carousel #Five  ---------
-
 // --------- Start of Carousel #Six ---------
 const slidersSix = document.querySelector(".CBN6");
 var scrollPerClickSix;
 var imagePaddingSix = 20;
-
-showMovieDataSix();
-
 var scrollAmountSix = 0;
 
 function sliderScrollLeftSix() {
@@ -277,29 +258,26 @@ function sliderScrollRightSix() {
 
 async function showMovieDataSix() {
 	const api_key = "c410e49d7b8a0b61da272540eac14079";
-	var result = await axios.get("https://api.themoviedb.org/3/discover/movie/?certification_country=US&certification=R&api_key=" + api_key + "&sort_by=revenue.desc");
+	var result = await axios.get("https://api.themoviedb.org/3/discover/movie?certification_country=US&certification=R&api_key=" + api_key + "&sort_by=popularity.desc");
 	result = result.data.results;
 
 	result.map(function (cur, index) {
 		slidersSix.insertAdjacentHTML("beforeend", `<img class="img-${index} slider-img" src="https://image.tmdb.org/t/p/w185/${cur.poster_path}" />`);
 	});
-	scrollPerClickSix = document.querySelector(".img-1").clientWidth + imagePaddingSix;
+	scrollPerClickSix = document.querySelector(".img-1").clientWidth + imagePaddingSix * 6.6;
 }
+showMovieDataSix();
 
 // Hide left arrow till right arrow is pressed
-function ShowLSix() {
-	var T = document.getElementById("LSix");
+function ShowLNumSix() {
+	var T = document.getElementById("LNumSix");
 	T.style.display = "block"; // <-- Set it to block
 }
 // ---------  End of Carousel #Six  ---------
-
 // --------- Start of Carousel #Seven ---------
 const slidersSeven = document.querySelector(".CBN7");
 var scrollPerClickSeven;
 var imagePaddingSeven = 20;
-
-showMovieDataSeven();
-
 var scrollAmountSeven = 0;
 
 function sliderScrollLeftSeven() {
@@ -332,12 +310,13 @@ async function showMovieDataSeven() {
 	result.map(function (cur, index) {
 		slidersSeven.insertAdjacentHTML("beforeend", `<img class="img-${index} slider-img" src="https://image.tmdb.org/t/p/w185/${cur.poster_path}" />`);
 	});
-	scrollPerClickSeven = document.querySelector(".img-1").clientWidth + imagePaddingSeven;
+	scrollPerClickSeven = document.querySelector(".img-1").clientWidth + imagePaddingSeven * 6.6;
 }
+showMovieDataSeven();
 
 // Hide left arrow till right arrow is pressed
-function ShowLSeven() {
-	var T = document.getElementById("LSeven");
+function ShowLNumSeven() {
+	var T = document.getElementById("LNumSeven");
 	T.style.display = "block"; // <-- Set it to block
 }
 // ---------  End of Carousel #Seven  ---------
