@@ -166,7 +166,8 @@ function sliderScrollRightFour() {
 
 async function showMovieDataFour() {
 	const api_key = "c410e49d7b8a0b61da272540eac14079";
-	var result = await axios.get("https://api.themoviedb.org/3/discover/movie/?certification_country=US&certification=R&api_key=" + api_key + "&primary_release_year=2014");
+	var result = await axios.get("https://api.themoviedb.org/3/discover/movie?certification_country=US&certification.lte=G&api_key=" + api_key + "&sort_by=popularity.desc");
+	// var result = await axios.get("https://api.themoviedb.org/3/discover/movie/?certification_country=US&certification=R&api_key=" + api_key + "&primary_release_year=2014");
 	result = result.data.results;
 
 	result.map(function (cur, index) {
